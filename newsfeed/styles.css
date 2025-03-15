@@ -1,0 +1,137 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eaeaea;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background: #178dbf;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.newsfeed {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.news-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.news-content {
+    padding: 15px;
+}
+
+.news-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111;
+    margin: 0 0 10px;
+}
+
+.news-content .date {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.news-content p {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.news-content a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.news-content a:hover {
+    color: #ff4500;
+    text-decoration: underline;
+}
+
+.sidebar {
+    flex: 1;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    height: fit-content;
+    align-self: flex-start;
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+
+.sidebar ul li a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    color: #f5d10d;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .news-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        order: 1;
+        width: 100%;
+    }
+}

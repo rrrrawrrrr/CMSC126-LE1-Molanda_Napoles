@@ -1,7 +1,6 @@
-/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-/* Global Styles */
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #eaeaea;
@@ -124,7 +123,7 @@ header {
     text-decoration: underline;
 }
 
-/* Responsive Design */
+
 @media (max-width: 600px) {
     .news-container {
         flex-direction: column;
